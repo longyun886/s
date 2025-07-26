@@ -1,0 +1,22 @@
+// 顶层构建文件，所有模块共用的配置
+buildscript {
+    repositories {
+        google()  // 谷歌仓库
+        mavenCentral()  // 替换已废弃的 jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'  // 与 Gradle 8.2 兼容的版本
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // 谷歌仓库
+        mavenCentral()  // 替换已废弃的 jcenter()
+    }
+}
+
+// 清理构建目录的任务
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

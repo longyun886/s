@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件后缀"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etSuffix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="点击输入后缀 (显示:xaxbxc)"
+            android:inputType="text"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="非编辑状态显示: .xaxbxc"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="目标路径"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="点击输入路径 (显示:dcim/)"
+            android:inputType="text"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="非编辑状态显示: /sdcard/dcim/"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnRename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重命名"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnRestore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="还原"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbAutoClassify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自动分类 (按时间创建文件夹)"
+            android:layout_marginTop="16dp"/>
+
+        <CheckBox
+            android:id="@+id/cbAutoExecute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自动执行 (设置完成后自动重命名)"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
