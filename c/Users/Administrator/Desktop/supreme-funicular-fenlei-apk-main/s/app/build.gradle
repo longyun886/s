@@ -1,0 +1,7 @@
+android {
+    defaultConfig {
+        applicationId "com.example.fileorganizer"  // 替换为实际包名
+        // ... 其他配置 ...
+    }
+    // ... 其他代码 ...
+}
